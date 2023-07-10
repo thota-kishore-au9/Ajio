@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { Carousel1Component } from './carousel1/carousel1.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -15,11 +17,13 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     HomepageComponent,
     NavbarComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    Carousel1Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     CarouselModule.forRoot()
   ],
   providers: [],
