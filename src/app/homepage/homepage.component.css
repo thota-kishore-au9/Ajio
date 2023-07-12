@@ -79,4 +79,18 @@ img:hover {
 .container-fluid:hover img {
   opacity: 0.7;
 }
+.nav-item.active:hover {
+  /* Add your hover styles here */
+  /* For example, change the background color */
+  background-color: #f1f1f1;
+}
 
+/* Add the styles for the hidden content that should be shown on hover */
+.nav-item.active:hover .hidden-content {
+  display: flex;
+}
+
+/* Hide the hidden content by default */
+.hidden-content {
+  display: none;
+}
